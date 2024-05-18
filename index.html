@@ -6,10 +6,16 @@
     <title>portfolio</title>
     <meta name="discription" content="デザイナーやまもとのポートフォリオサイト">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,700&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
+
 
     <div id="top">
         <div class="main-wrap">
@@ -24,6 +30,7 @@
                     <li class="menu">About</li>
                     <li class="menu">Works</li>
                     <li class="menu">Contact</li>
+                    <li class="menu"><img src="images/logo-black.png" alt="X"></li>
                 </ul>
             </nav>
         </div>
@@ -31,69 +38,153 @@
 
 
 
+
+
     <div id="about">
-        <h1 class="about-top"><img src="images/about.png" alt="about"></h1>
+        <!-- <h1 class="about-top"><img src="images/about.png" alt="about"></h1> -->
+        <h1 class="about-top">About</h1>
 
-        <div class="about-name">
-            <p class="name">TOMOKO YAMAMOTO</p>
-            <p class="name-small">やまもと ともこ</p>
-        </div>
-
-        <div class="about-wrap">
-            <p class="photo"><img src="images/Photo.png" alt="photo"></p>
-            <p class="about-text">
-                独学で飲食店やイベントのフライヤーを制作する中で、<br>
-                人を動かすデザイン力を身につけたいと思うようになり、<br>
-                エンタメ業界、接客業、事務職を経て、<br>
-                Web・Graphic Designを本格的に学び始めました。<br>
-                <br>
-                神奈川県出身。蟹座のA型。<br>
-                食べること、お菓子作り、写真、植物が好き。<br>
+            <div class="about-name">
+                <p class="name">TOMOKO YAMAMOTO</p>
+                <p class="name-small">やまもと ともこ</p>
+            </div>
             
 
-                </p>
-        </div>
-    </div>
+                <div class="about-wrap">
+                    <p class="photo"><img src="images/Photo.png" alt="photo"></p>
+                    <p class="about-text">
+                        独学で飲食店やイベントのフライヤーを制作する中で、<br>
+                        人を動かすデザイン力を身につけたいと思うようになり、<br>
+                        エンタメ業界、接客業、事務職を経て、<br>
+                        Web・Graphic Designを本格的に学び始めました。<br>
+                        <br>
+                        神奈川県出身。蟹座のA型。<br>
+                        食べること、お菓子作り、写真、植物が好き。<br>
+                        </p>
+                </div>
+
+
+                <div class="about-btn">
+                    <a href="about.html" class="about-btn-text">もっと私のことを見てみる</a>
+                </div>   
+     </div>
+
+
 
     <div id="works">
         <div class="works-wrap">
-            <h2 class="works-top"><img src="images/works.png" alt="about"></h2>
+            <!-- <h2 class="works-top"><img src="images/works.png" alt="about"></h2> -->
+            <h2 class="works-top">Works</h2>
         </div>
 
+        <!-- <div class="about-btn">
+            <a href="#" class="about-btn-text">もっと私のことを見てみる</a>
+        </div> -->
+
+
         <div class="works-list">
-            <ul class="tab">
-                <li class="">ALL</li>
-                <li class="">WEB</li>
-                <li class="">バナー</li>
-                <li class="">他</li>
+            <ul class="tab-btn">
+                <li class="tab-btn-all"><a href="#" class="tab-text">ALL</a></li>
+                <li class="tab-btn-all"><a href="#" class="tab-text">WEB</a></li>
+                <li class="tab-btn-all"><a href="#" class="tab-text">バナー</a></li>
+                <li class="tab-btn-all"><a href="#" class="tab-text">他</a></li>
             </ul>
         </div>
 
         <div class="works-contents">
             <ul class="works-all"></ul>
-                <li><p><img src="images/kadai2_yamamoto_02.jpg" alt="トラベルメディアアプリバナー"></p>
+                <li><p class="works1"><a href="works_travelmedia.html">
+                    <img src="images/kadai2_yamamoto_02.jpg" alt="トラベルメディアアプリバナー"></p></a>
                     <div class="contents-text-area">
                         <p class="contents-texttop">スクール課題</p>
                         <p class="contents-text">トラベルメディアアプリ</p>
                     </div>
                 </li>
 
-                <li><p><img src="images/works_kadai3.png" alt="激旨バーガーバナー"></p>
+                <li><p class="works2"><img src="images/kadai3_koukyuB_yamamoto_02.jpg" alt="激旨バーガーバナー"></p>
                     <div class="contents-text-area">
                         <p class="contents-texttop">スクール課題</p>
-                        <p class="contents-textin">激旨バーガー告知</p>
+                        <p class="contents-text">激旨バーガー告知</p>
                     </div>
                 </li>
 
-                <li><p><img src="images/works_kadai5.png" alt="美容室WEBサイト"></p>
+                <li><p class="works3"><img src="images/works_kadai5.jpg" alt="美容室WEBサイト"></p>
                     <div class="contents-text-area">
                         <p class="contents-texttop">スクール課題</p>
                         <p class="contents-text">美容室WEBサイト</p>
                     </div>
                 </li>
+
+                <li><p class="works4"><img src="images/comingsoon.jpg" alt="comingsoon"></p>
+                    <div class="contents-text-area">
+                        <p class="contents-texttop">・・・</p>
+                        <p class="contents-text">・・・・・・</p>
+                    </div>
+                </li>
+
+                <li><p class="works5"><img src="images/comingsoon.jpg" alt="comingsoon"></p>
+                    <div class="contents-text-area">
+                        <p class="contents-texttop">・・・</p>
+                        <p class="contents-text">・・・・・・</p>
+                    </div>
+                </li>
+
+                <li><p class="works6"><img src="images/comingsoon.jpg" alt="comingsoon"></p>
+                    <div class="contents-text-area">
+                        <p class="contents-texttop">・・・</p>
+                        <p class="contents-text">・・・・・・</p>
+                    </div>
+                </li>
+
+            </ul>
+
+
+        </div>
+
+
+        <div class="works-btn">
+            <a href="#" class="all-works-btn">All Works</a>
+        </div>
+
+        
+
+<!-- footer -->
+
+<footer id="site-footer">
+    <div class="footer-wrap">
+        <p class="footer-img"><img src="images/footer.png" alt="やまもとのポートフォリオサイト"></p>
+ 
+
+        <div class="footer-text">
+            <p class="footer-text-name">TOMOKO YAMAMOTO</p>
+            <p class="footer-text-psite">Portfolio site</p>
+        </div>
+
+        <div class="footer-nav">
+            <ul class="footer-nav-btn">
+                <li class="footer-nav-in">About</li>
+                <li class="footer-nav-in">Works</li>
+                <li class="footer-nav-in">Contact</li>
             </ul>
         </div>
 
+        <div>
+            <p class="footer-last">©︎2024 tomoko yamamoto</p>
+        </div>
+
+    </div>
+
+<!-- page top -->
+
+
+<div>
+    <p class="pagetop"><a href="#top"><img src="images/go_top.png" alt="ページトップ"></p>
+</div>
+
+
+
+
+</footer>
 
 
 

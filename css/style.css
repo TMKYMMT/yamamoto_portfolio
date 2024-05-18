@@ -65,12 +65,30 @@ body {
 
 
 .main-wrap {
-    max-width: 1366px;
+    /* max-width: 1366px; */
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    color: rgb(54, 55, 55);
 }
 
+
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 700
+
+.josefin-sans-<uniquifier> {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+
+
 .fv img {
-    position: relative;
-    width: 100%;
+    /* position: relative; */
+    /* width: 1366px; */
     height: auto;
     align-items: center;
 }
@@ -88,7 +106,8 @@ body {
 .title-top {
     position: absolute;
     float: left;
-    top:55%;
+    /* top:55%; */
+    top:50%;
     left:10%;
     font-size: 36px;
 }
@@ -96,22 +115,26 @@ body {
 .title-middle {
     position: absolute;
     float: left;
-    top:70%;
+    /* top:70%; */
+    top:65%;
     left:10%;
     font-size: 48px;
+    color: rgb(54, 55, 55);
 }
 
 .title-bottom {
     position: absolute;
     float: left;
-    top:80%;
+    /* top:80%; */
+    top:75%;
     left:10%;
     font-size: 36px;
+    color: rgb(54, 55, 55);
 }
 
 .main-wrap h1 {
     font-weight: lighter;
-    color: #1f1f1f;
+    color: rgb(54, 55, 55);
 }
 
 .pc-nav {
@@ -120,29 +143,46 @@ body {
     flex-direction: column;
     text-align: right;
     font-weight: lighter;
-    color: #1f1f1f;
+    color: rgb(54, 55, 55);
     right: 0px;
+    top: 50%;
+    margin-right: 37px;
 }
 
 .menu {
     line-height: 55px;
 }
 
+.menu img {
+    width: 24px;
+}
+
+
+
+
+
 
 /* About */
 
 .about-top {
     margin-top: 336px;
+    /* max-width: 1366px; */
+    text-align: center;
+    font-size: 48px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
 }
 
-.about-top img {
+/* .about-top img {
     display: table;
     margin: 0 auto;
     width: 143px;
-}
+} */
 
 .about-name {
-    margin-left: 13%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 
@@ -150,14 +190,21 @@ body {
     margin-top: 155px;
     font-size: 48px;
     font-weight: lighter;
-    margin-left: 13.3%;
+    color: rgb(54, 55, 55);
 }
 
 .name-small {
     margin-top: 30px;
     font-size: 18px;
     font-weight: lighter;
-    margin-left: 13.3%;
+    margin-top: 40px;
+    margin-left: 5%;
+    line-height: 35px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    color: rgb(54, 55, 55);
 }
 
 
@@ -170,6 +217,11 @@ body {
     margin-top: 40px;
     margin-left: 5%;
     line-height: 35px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    color: rgb(54, 55, 55);
 }
 
 .about-wrap {
@@ -180,31 +232,114 @@ body {
 }
 
 
+.about-btn {
+    width: 73.2%;
+    text-align: right;
+    margin-top: -45px;
+}
+
+.about-btn-text {
+    width: 260px;
+    display: inline-block;
+    background-color: #fff;
+    color: rgb(54, 55, 55);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 50px;
+    border-color: hwb(188 17% 36%);
+    border-width: 1px;
+    border-style: solid;
+    margin-top: 40px;
+    margin-left: 5%;
+    line-height: 35px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.about-btn-text:hover {
+    background-color: hwb(188 17% 36%);
+}
 
 
 
 /* works */
 
+.works-list {
+    display: flex;
+    justify-content: center;  
+}
+
+ul.tab-btn {
+    margin-top: 125px;
+    display: flex;
+    justify-content: space-between;
+    width: 31.8%;
+    /* margin-left: 34%; */
+    gap: 17px;
+}
+
+.tab-text {
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+        width: 96px;
+        display: inline-block;
+        background-color: #fff;
+        color: rgb(54, 55, 55);
+        text-align: center;
+        padding: 15px 0;
+        border-radius: 50px;
+        border-color: hwb(43 47% 3%);
+        border-width: 1px;
+        border-style: solid;
+        /* margin-top: 40px;
+        margin-left: 5%;
+        line-height: 35px; */
+    transition: background-color 0.4s ease-in-out;
+}
+
+.tab-text:hover {
+    background-color: hwb(43 47% 3%);
+}
 
 
+
+.works-all {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 108px; */
+    gap: 58px 139px;
+    width: 73.2%;
+
+}
 
 .works-wrap {
     margin-top: 205px;
 }
 
-.works-top img {
+/* .works-top img {
     display: table;
     margin: 0 auto;
     width: 140px;
+} */
+
+.works-top {
+    margin-top: 336px;
+    /* max-width: 1366px; */
+    text-align: center;
+    font-size: 48px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
 }
 
-ul.tab {
-    margin-top: 125px;
-    display: flex;
-    justify-content: space-between;
-    width: 31.8%;
-    margin-left: 34%;
-}
 
 ul {
     margin: 0;
@@ -218,25 +353,181 @@ ul {
     margin-top: 108px;
 }
 
-.works-all {
+.works-contents {
+    max-width: 73.2%;
+    /* width: 73.2%; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-right: 183px;
+    margin-left: 183px;
+
+
+
 }
 
 .works-contents img {
     height: 293px;
+    width: 293px;
+    box-shadow: 1px 1px 15px rgb(255 193 7 / 28%);
+    /* box-shadow: 8px 6px 5px rgb(255 193 7 / 28%); */
+}
+
+
+.works-contents {
+    display: flex;
+    justify-content: space-between;
 }
 
 .contents-texttop {
     font-size: 15px;
+    margin-top: 28px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
 }
 
 .contents-text {
     font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 68px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
 }
 
-.works-all {
+
+li {
+    list-style: none;
+}
+
+
+.works-btn {
+    text-align: center;
+}
+
+.all-works-btn {
+    margin-top: 97px;
+    max-width: 1366px;
+    text-align: center;
+    font-size: 21px;
+    width: 150px;
+    display: inline-block;
+    background-color: #fff;
+    padding: 15px 0;
+    border-radius: 50px;
+    border-color: hwb(188 17% 36%);
+    border-width: 1px;
+    border-style: solid;
+    margin-top: 40px;
+    /* margin-left: 5%; */
+    line-height: 35px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    transition: background-color 0.4s ease-in-out;
+}
+
+
+.all-works-btn:hover {
+    background-color: hwb(188 17% 36%);
+}
+
+
+/* footer */
+
+.footer-img img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin-top: 180px;
+}
+
+.footer-wrap {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    color: rgb(54, 55, 55);
+}
+
+.footer-text {
+    margin-left: 183px;
+    font-size: 21px;
+    transform-origin: top left;
+    transform: scale(1.05, 1);
+    position: absolute;
+}
+
+.footer-text-psite {
+    margin-top: 25px;
+}
+
+/* .footer-nav-in {
+    font-size: 21px;
+    transform-origin: top left;
+    transform: scale(1.05, 1);
+} */
+
+
+/* .footer-nav {
     display: flex;
     justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-weight: lighter;
+    margin-right: 183px;
+} */
+
+
+.footer-nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    right: 0px;
+    margin-right: 183px;
+    max-width: 374px;
+    /* justify-content: center;   */
+}
+
+.footer-nav-btn {
+    /* margin-top: 125px; */
+    display: flex;
+    justify-content: space-between;
+    width: 31.8%;
+    /* margin-left: 34%; */
+    gap: 97px;
+}
+
+.footer-nav-in {
+    text-align: right;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-size: 21px;
+    font-style: normal;
+    transform-origin: top left;
+    transform: scale(1.05, 1);
+}
+
+
+
+
+.footer-last {
+    text-align: center;
+    font-size: 21px;
+    transform-origin: top left;
+    transform: scale(1.05, 1);
+}
+
+/* page top */
+
+.pagetop {
+    width: 70px;
+    position: fixed;
+    /* bottom: 158px; */
+    bottom: 86px;
+    right: 86px;
 }
